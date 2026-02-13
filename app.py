@@ -24,7 +24,8 @@ if uploaded_file:
     st.write(df_test.head())
 
     # Load Model and Scaler
-    model_path = f"model/{bc_'model_choice.lower().replace(' ', '_')}.pkl"
+    model_path = f"model/{bc_model_choice.lower().replace(' ', '_')}.pkl"
+    #model_path = f"model/{bc_'model_choice.lower().replace(' ', '_')}.pkl"
     model = pickle.load(open(model_path, 'rb'))
     scaler = pickle.load(open('model/scaler.pkl', 'rb'))
 
