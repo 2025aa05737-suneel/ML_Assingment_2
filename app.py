@@ -11,7 +11,7 @@ st.write("Upload a CSV file to test the models and see predictions.")
 
 # 1. Sidebar for Model Selection
 st.sidebar.header("Settings")
-model_choice = st.sidebar.selectbox(
+bc_model_choice = st.sidebar.selectbox(
     "Select Model", 
     ("Logistic Regression", "Decision Tree", "KNN", "Naive Bayes", "Random Forest", "XGBoost")
 )
