@@ -40,7 +40,7 @@ if uploaded_file:
         
         # Display Results
         df_test['Prediction'] = ["Malignant" if p == 0 else "Benign" for p in preds]
-        st.success(f"Predictions completed using {model_choice}")
+        st.success(f"Predictions completed using {bc_model_choice}")
         st.dataframe(df_test)
 
         # 3. Visualization: Confusion Matrix (Required for Marks)
