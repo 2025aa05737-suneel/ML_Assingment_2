@@ -16,6 +16,8 @@ model_choice = st.sidebar.selectbox(
     ("Logistic Regression", "Decision Tree", "KNN", "Naive Bayes", "Random Forest", "XGBoost")
 )
 st.subheader(f"📊 {model_choice} Performance Metrics")
+
+metrics_df = pd.read_csv('model/comparison_metrics.csv')
 if metrics_df is not None:
     # Filter the table for the selected model
     model_stats = metrics_df[metrics_df['Model'] == model_choice].iloc[0]
