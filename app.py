@@ -20,7 +20,7 @@ st.subheader(f"📊 {model_choice} Performance Metrics")
 metrics_df = pd.read_csv('model/comparison_metrics.csv')
 if metrics_df is not None:
     # Filter the table for the selected model
-    model_stats = metrics_df[metrics_df['Model'] == model_choice].iloc[0]
+    model_stats = metrics_df[metrics_df['ML Model Name'] == model_choice].iloc[0]
     
     # Display metrics in a clean row of columns
     col1, col2, col3, col4 = st.columns(4)
