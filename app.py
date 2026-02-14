@@ -15,6 +15,19 @@ model_choice = st.sidebar.selectbox(
     "Select Model", 
     ("Logistic Regression", "Decision Tree", "KNN", "Naive Bayes", "Random Forest", "XGBoost")
 )
+st.subheader(f"📊 {model_choice} Performance Metrics")
+if metrics_df is not None:
+    # Filter the table for the selected model
+    model_stats = metrics_df[metrics_df['Model'] == model_choice].iloc[0]
+    
+    # Display metrics in a clean row of columns
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Accuracy", f"{model_stats['Accuracy']:.2%}")
+    col2.metric("MCC", f"{model_stats['MCC']:.3f}")
+    col3.metric("Precision", f"{model_stats['Precision']:.2%}")
+    col4.metric("Recall", f"{model_stats['Recall']:.2%}")
+else:
+    st.warning("Metrics file not found. Please ensure 'comparison_metrics.csv' is in the model folder.")
 # 2. File Uploader
 uploaded_file = st.file_uploader("Choose a CSV file (e.g., test_samples.csv)", type="csv")
 
