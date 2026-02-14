@@ -47,10 +47,13 @@ The following table summarizes the evaluation metrics for all 6 models trained:
 | **XGBoost** | 0.935780 | 0.957958 | 0.911392 | 1.000000 | 0.953642 | 0.859632 |
 
 Observations on Model Performance
-ML Model Name	Observation about model performance
-Logistic Regression	Best Overall Performer. It achieved the highest Accuracy (0.9449) and a perfect Recall (1.0). It is the most balanced model for this dataset.
-Decision Tree	While it maintained perfect Recall, it had the lowest AUC (0.8784), suggesting it may struggle with generalizability compared to ensemble methods.
-kNN	Matches Logistic Regression in Accuracy and F1-score (0.96), proving that a distance-based approach is highly effective for this specific data distribution.
-Naive Bayes	Features the highest AUC (0.9773), showing excellent separation power, though it had the lowest Accuracy and MCC among all models.
-Random Forest (Ensemble)	Highly reliable with perfect Recall, but slightly lower Precision (0.8889) than Logistic Regression or XGBoost on this test set.
-XGBoost (Ensemble)	Strong Runner-up. It provides a high MCC (0.8596) and perfect Recall, making it a very robust choice for production deployment.
+### Observations on Model Performance
+
+| ML Model Name | Observation about model performance |
+| :--- | :--- |
+| **Logistic Regression** | **Best Overall Performer.** It achieved the highest Accuracy (0.9449) and a perfect Recall (1.0). It is the most balanced model for this dataset. |
+| **Decision Tree** | While it maintained perfect Recall, it had the lowest AUC (0.8784), suggesting it may struggle with generalizability compared to ensemble methods. |
+| **kNN** | Matches Logistic Regression in Accuracy and F1-score (0.96), proving that a distance-based approach is highly effective for this specific data distribution. |
+| **Naive Bayes** | Features the highest AUC (0.9773), showing excellent separation power, though it had the lowest Accuracy and MCC among all models. |
+| **Random Forest (Ensemble)** | Highly reliable with perfect Recall, but slightly lower Precision (0.8889) than Logistic Regression or XGBoost on this test set. |
+| **XGBoost (Ensemble)** | **Strong Runner-up.** It provides a high MCC (0.8596) and perfect Recall, making it a very robust choice for production deployment. |
