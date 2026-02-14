@@ -36,6 +36,12 @@ The following table summarizes the evaluation metrics for all 6 models trained:
 
 ML Model Name,Accuracy,AUC,Precision,Recall,F1,MCC
 
-
+ML Model Name	Accuracy	AUC	Precision	Recall	F1	MCC
+Logistic Regression	0.944954	0.976727	0.923077	1	0.96	0.879425
+Decision Tree	0.917431	0.878378	0.888889	1	0.941176	0.820166
+kNN	0.944954	0.953641	0.923077	1	0.96	0.879425
+Naive Bayes	0.899083	0.97729	0.886076	0.972222	0.927152	0.772873
+Random Forest	0.917431	0.972785	0.888889	1	0.941176	0.820166
+XGBoost	0.93578	0.957958	0.911392	1	0.953642	0.859632
 
 Observations on Model Performance
