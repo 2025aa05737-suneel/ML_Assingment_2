@@ -24,8 +24,7 @@ if uploaded_file:
     st.write(df_test.head())
 
     # Load Model and Scaler
-    #formatted_name = "bc_"+ {model_choice.lower()}.replace(' ', '_')
-    #model_path = f"model/{formatted_name}.pkl" 
+ 
     model_path = f"model/{model_choice.lower().replace(' ', '_')}.pkl"
     model = pickle.load(open(model_path, 'rb'))
     scaler = pickle.load(open('model/scaler.pkl', 'rb'))
@@ -40,7 +39,7 @@ if uploaded_file:
         
         # Display Results
         df_test['Prediction'] = ["Malignant" if p == 0 else "Benign" for p in preds]
-        st.success(f"Predictions completed using {bc_model_choice}")
+        st.success(f"Predictions completed using {model_choice}")
         st.dataframe(df_test)
 
         # 3. Visualization: Confusion Matrix (Required for Marks)
