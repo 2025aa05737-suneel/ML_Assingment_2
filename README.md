@@ -81,7 +81,7 @@ The following table summarizes the evaluation metrics for all 6 models trained:
 | **Random Forest** | 0.917431 | 0.972785 | 0.888889 | 1.000000 | 0.941176 | 0.820166 |
 | **XGBoost** | 0.935780 | 0.957958 | 0.911392 | 1.000000 | 0.953642 | 0.859632 |
 
-Observations on Model Performance
+ 
 ### Observations on Model Performance
 
 | ML Model Name | Observation about model performance |
