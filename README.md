@@ -71,16 +71,16 @@ Models used: Comparison Table
 The following table summarizes the evaluation metrics for all 6 models trained:
 
 
-**Models used: Comparison Table**
+## ML Model Performance Comparison
 
-| ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
+| ML Model Name | Accuracy | AUC | Precision | Recall | F1 Score | MCC |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Logistic Regression** | 0.944954 | 0.976727 | 0.923077 | 1.000000 | 0.960000 | 0.879425 |
-| **Decision Tree** | 0.917431 | 0.878378 | 0.888889 | 1.000000 | 0.941176 | 0.820166 |
-| **kNN** | 0.944954 | 0.953641 | 0.923077 | 1.000000 | 0.960000 | 0.879425 |
-| **Naive Bayes** | 0.899083 | 0.977290 | 0.886076 | 0.972222 | 0.927152 | 0.772873 |
-| **Random Forest** | 0.917431 | 0.972785 | 0.888889 | 1.000000 | 0.941176 | 0.820166 |
-| **XGBoost** | 0.935780 | 0.957958 | 0.911392 | 1.000000 | 0.953642 | 0.859632 |
+| **Logistic Regression** | 0.9737 | 0.9974 | 0.9722 | 0.9859 | 0.9790 | 0.9439 |
+| **Decision Tree** | 0.9474 | 0.9440 | 0.9577 | 0.9577 | 0.9577 | 0.8880 |
+| **kNN** | 0.9474 | 0.9820 | 0.9577 | 0.9577 | 0.9577 | 0.8880 |
+| **Naive Bayes** | 0.9649 | 0.9974 | 0.9589 | 0.9859 | 0.9722 | 0.9253 |
+| **Random Forest (Ensemble)** | 0.9649 | 0.9956 | 0.9589 | 0.9859 | 0.9722 | 0.9253 |
+| **XGBoost (Ensemble)** | 0.9561 | 0.9931 | 0.9583 | 0.9718 | 0.9650 | 0.9064 |
 
  
 ### Observations on Model Performance
