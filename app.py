@@ -20,7 +20,7 @@ try:
     csv_download = sample_data.to_csv(index=False).encode('utf-8')
 
     st.sidebar.download_button(
-        label="📥 Download Test CSV",
+        label="📥 Download Test file",
         data=csv_download,
         file_name='test_data_for_testing.csv',
         mime='text/csv',
