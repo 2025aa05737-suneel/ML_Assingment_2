@@ -56,6 +56,7 @@ ML-Assignment_2
 ```
 
 **requirements.txt
+
 streamlit
 pandas
 numpy
