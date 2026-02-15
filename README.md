@@ -83,13 +83,13 @@ The following table summarizes the evaluation metrics for all 6 models trained:
 | **XGBoost (Ensemble)** | 0.9561 | 0.9931 | 0.9583 | 0.9718 | 0.9650 | 0.9064 |
 
  
-### Observations on Model Performance
+## ML Model Performance & Observation Table
 
 | ML Model Name | Observation about model performance |
 | :--- | :--- |
-| **Logistic Regression** | **Best Overall Performer.** It achieved the highest Accuracy (0.9449) and a perfect Recall (1.0). It is the most balanced model for this dataset. |
-| **Decision Tree** | While it maintained perfect Recall, it had the lowest AUC (0.8784), suggesting it may struggle with generalizability compared to ensemble methods. |
-| **kNN** | Matches Logistic Regression in Accuracy and F1-score (0.96), proving that a distance-based approach is highly effective for this specific data distribution. |
-| **Naive Bayes** | Features the highest AUC (0.9773), showing excellent separation power, though it had the lowest Accuracy and MCC among all models. |
-| **Random Forest (Ensemble)** | Highly reliable with perfect Recall, but slightly lower Precision (0.8889) than Logistic Regression or XGBoost on this test set. |
-| **XGBoost (Ensemble)** | **Strong Runner-up.** It provides a high MCC (0.8596) and perfect Recall, making it a very robust choice for production deployment. |
+| **Logistic Regression** | **Top Performer:** Highest Accuracy (97.37%) and MCC (0.9439). It achieved a maximum Recall of 98.59%, making it the most reliable clinical choice. |
+| **Decision Tree** | **Baseline Tree:** Good Accuracy (94.74%) and Recall (95.77%), but more prone to overfitting compared to ensemble methods. |
+| **kNN** | **Proximity Based:** Matched the Decision Tree's Accuracy and Recall exactly. Effective but highly dependent on the quality of feature scaling. |
+| **Naive Bayes** | **Highly Efficient:** Tied for the highest Recall (98.59%) and AUC (0.9974). Exceptional at identifying true positives with very little computational overhead. |
+| **Random Forest (Ensemble)** | **Strong Reliability:** The ensemble of trees successfully reduced errors found in the single Decision Tree, matching the top-tier Recall of 98.59%. |
+| **XGBoost (Ensemble)** | **Advanced Boosting:** High AUC (0.9931), showing great class separation. Slightly lower Recall (97.18%) than Logistic Regression but still very strong. |
