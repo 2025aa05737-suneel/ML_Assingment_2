@@ -29,7 +29,7 @@ The Spambase dataset is a binary classification dataset containing email message
 - **Missing Values:** None
 
 **Preprocessing:** The models were trained on features scaled and encoded to optimize the performance of both linear and tree-based algorithms.
-Testing Split: 90/10
+Testing Split: 90/20
 
 ## Repository Structure
 
