@@ -53,6 +53,17 @@ ML-Assignment_2
 └── requirements.txt           # Deployment dependencies
 ```
 
+**requirements.txt
+streamlit
+pandas
+numpy
+scikit-learn
+xgboost
+matplotlib
+seaborn
+
+
+
 Models used: Comparison Table
 The following table summarizes the evaluation metrics for all 6 models trained:
 
