@@ -8,7 +8,26 @@ st.set_page_config(page_title="Breast Cancer Diagnostic Tool", layout="wide")
 
 st.title("🩺 Breast Cancer Classification Dashboard")
 st.write("Upload a CSV file to test the models and see predictions.")
+st.sidebar.divider()
+st.sidebar.subheader("Test Data for Evaluation")
 
+# Load the file to provide it as a download
+try:
+    # Ensure test_data.csv is in your GitHub root or model folder
+    sample_data = pd.read_csv('test_data.csv') 
+    
+    # Convert dataframe to CSV for the download button
+    csv_download = sample_data.to_csv(index=False).encode('utf-8')
+
+    st.sidebar.download_button(
+        label="📥 Download Test CSV",
+        data=csv_download,
+        file_name='test_data_for_testing.csv',
+        mime='text/csv',
+        help="Download this file and upload it below to test the model."
+    )
+except Exception as e:
+    st.sidebar.error("test_data.csv not found in repository.")
 # 1. Sidebar for Model Selection
 st.sidebar.header("Settings")
 model_choice = st.sidebar.selectbox(
