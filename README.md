@@ -93,3 +93,11 @@ The following table summarizes the evaluation metrics for all 6 models trained:
 | **Naive Bayes** | **Highly Efficient:** Tied for the highest Recall (98.59%) and AUC (0.9974). Exceptional at identifying true positives with very little computational overhead. |
 | **Random Forest (Ensemble)** | **Strong Reliability:** The ensemble of trees successfully reduced errors found in the single Decision Tree, matching the top-tier Recall of 98.59%. |
 | **XGBoost (Ensemble)** | **Advanced Boosting:** High AUC (0.9931), showing great class separation. Slightly lower Recall (97.18%) than Logistic Regression but still very strong. |
+
+
+##Key Summary of Results
+Highest Recall: Logistic Regression, Naive Bayes, and Random Forest all achieved 98.59%, which is vital for minimizing false negatives in cancer diagnosis.
+
+Highest Accuracy & MCC: Logistic Regression outperformed all others with 97.37% accuracy and an MCC of 0.9439, showing superior predictive power on this dataset.
+
+Most Discriminative: Logistic Regression and Naive Bayes shared the top AUC of 0.9974, indicating nearly perfect separation between benign and malignant classes.
