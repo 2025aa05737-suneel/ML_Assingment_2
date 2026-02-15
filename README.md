@@ -95,7 +95,7 @@ The following table summarizes the evaluation metrics for all 6 models trained:
 | **XGBoost (Ensemble)** | **Advanced Boosting:** High AUC (0.9931), showing great class separation. Slightly lower Recall (97.18%) than Logistic Regression but still very strong. |
 
 
-##Key Summary of Results
+## Key Summary of Results
 Highest Recall: Logistic Regression, Naive Bayes, and Random Forest all achieved 98.59%, which is vital for minimizing false negatives in cancer diagnosis.
 
 Highest Accuracy & MCC: Logistic Regression outperformed all others with 97.37% accuracy and an MCC of 0.9439, showing superior predictive power on this dataset.
