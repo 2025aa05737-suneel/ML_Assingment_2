@@ -9,12 +9,12 @@ st.set_page_config(page_title="Breast Cancer Diagnostic Tool", layout="wide")
 st.title("🩺 Breast Cancer Classification Dashboard")
 st.write("Upload a CSV file to test the models and see predictions.")
 st.sidebar.divider()
-st.sidebar.subheader("Test Data for Evaluation")
+st.sidebar.subheader("Test Data file")
 
 # Load the file to provide it as a download
 try:
     # Ensure test_data.csv is in your GitHub root or model folder
-    sample_data = pd.read_csv('data/test_data.csv') 
+    sample_data = pd.read_csv('Data/test_data.csv') 
     
     # Convert dataframe to CSV for the download button
     csv_download = sample_data.to_csv(index=False).encode('utf-8')
