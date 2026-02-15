@@ -44,13 +44,14 @@ if metrics_df is not None:
     model_stats = metrics_df[metrics_df['ML Model Name'] == model_choice].iloc[0]
     
     # Display metrics in a clean row of columns
-    col1, col2, col3, col4, col5, col6 = st.columns(6)
-    col1.metric("Accuracy", f"{model_stats['Accuracy']:.2%}")
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Accuracy", f"{model_stats['Accuracy']:.3%}")
     col2.metric("MCC", f"{model_stats['MCC']:.3f}")
     col3.metric("AUC", f"{model_stats['AUC']:.3f}")
-    col4.metric("Precision", f"{model_stats['Precision']:.2%}")
-    col5.metric("Recall", f"{model_stats['Recall']:.2%}")
-    col5.metric("F1", f"{model_stats['F1']:.2%}")
+    col4, col5, col6 = st.columns(3)
+    col4.metric("Precision", f"{model_stats['Precision']:.3%}")
+    col5.metric("Recall", f"{model_stats['Recall']:.3%}")
+    col5.metric("F1", f"{model_stats['F1']:.3%}")
 else:
     st.warning("Metrics file not found. Please ensure 'comparison_metrics.csv' is in the model folder.")
 # 2. File Uploader
