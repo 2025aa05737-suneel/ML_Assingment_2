@@ -51,7 +51,7 @@ if metrics_df is not None:
     col4, col5, col6 = st.columns(3)
     col4.metric("Precision", f"{model_stats['Precision']:.2%}")
     col5.metric("Recall", f"{model_stats['Recall']:.2%}")
-    col5.metric("F1", f"{model_stats['F1']:.2%}")
+    col6.metric("F1", f"{model_stats['F1']:.2%}")
 else:
     st.warning("Metrics file not found. Please ensure 'comparison_metrics.csv' is in the model folder.")
 # 2. File Uploader
