@@ -31,6 +31,8 @@ The Spambase dataset is a binary classification dataset containing email message
 **Preprocessing:** The models were trained on features scaled and encoded to optimize the performance of both linear and tree-based algorithms.
 Testing Split: 28 rows were reserved for Streamlit testing to validate real-time model predictions.
 ## Repository Structure
+
+```
 ML-Assignment_2
 ├── Data/
 │   ├── master_data.csv        # Combined dataset
@@ -49,6 +51,7 @@ ML-Assignment_2
 ├── app.py                     # Streamlit Application code
 ├── README.md                  # Project documentation & observations
 └── requirements.txt           # Deployment dependencies
+```
 
 Models used: Comparison Table
 The following table summarizes the evaluation metrics for all 6 models trained:
