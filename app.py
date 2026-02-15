@@ -14,7 +14,7 @@ st.sidebar.subheader("Test Data for Evaluation")
 # Load the file to provide it as a download
 try:
     # Ensure test_data.csv is in your GitHub root or model folder
-    sample_data = pd.read_csv('test_data.csv') 
+    sample_data = pd.read_csv('data/test_data.csv') 
     
     # Convert dataframe to CSV for the download button
     csv_download = sample_data.to_csv(index=False).encode('utf-8')
