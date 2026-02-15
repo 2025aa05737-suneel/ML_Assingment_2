@@ -9,6 +9,15 @@ st.set_page_config(page_title="Breast Cancer Diagnostic Tool", layout="wide")
 st.title("🩺 Breast Cancer Classification Dashboard")
 st.write("Upload a CSV file to test the models and see predictions.")
 st.sidebar.divider()
+
+# 1. Sidebar for Model Selection
+st.sidebar.header("Settings")
+model_choice = st.sidebar.selectbox(
+    "Select Model", 
+    ("Logistic Regression", "Decision Tree", "KNN", "Naive Bayes", "Random Forest", "XGBoost")
+)
+st.subheader(f"📊 {model_choice} Performance Metrics")
+
 st.sidebar.subheader("Test Data file")
 
 # Load the file to provide it as a download
@@ -28,13 +37,6 @@ try:
     )
 except Exception as e:
     st.sidebar.error("test_data.csv not found in repository.")
-# 1. Sidebar for Model Selection
-st.sidebar.header("Settings")
-model_choice = st.sidebar.selectbox(
-    "Select Model", 
-    ("Logistic Regression", "Decision Tree", "KNN", "Naive Bayes", "Random Forest", "XGBoost")
-)
-st.subheader(f"📊 {model_choice} Performance Metrics")
 
 metrics_df = pd.read_csv('model/comparison_metrics.csv')
 if metrics_df is not None:
