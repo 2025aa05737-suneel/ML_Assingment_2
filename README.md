@@ -30,6 +30,25 @@ The Spambase dataset is a binary classification dataset containing email message
 
 **Preprocessing:** The models were trained on features scaled and encoded to optimize the performance of both linear and tree-based algorithms.
 Testing Split: 28 rows were reserved for Streamlit testing to validate real-time model predictions.
+## Repository Structure
+ML-Assignment_2
+├── Data/
+│   ├── master_data.csv        # Combined dataset
+│   ├── test_data.csv          # Raw test data for Streamlit UI testing
+│   └── wdbc.data              # Original UCI dataset file
+├── model/
+│   ├── 2025aa05737__ML_assignment.ipynb  # Training script Notebook
+│   ├── comparison_metrics.csv # Saved metrics for Streamlit display
+│   ├── decision_tree.pkl      # Serialized Model Files
+│   ├── knn.pkl
+│   ├── logistic_regression.pkl
+│   ├── naive_bayes.pkl
+│   ├── random_forest.pkl
+│   ├── xgboost.pkl
+│   └── scaler.pkl             # StandardScaler for preprocessing
+├── app.py                     # Streamlit Application code
+├── README.md                  # Project documentation & observations
+└── requirements.txt           # Deployment dependencies
 
 Models used: Comparison Table
 The following table summarizes the evaluation metrics for all 6 models trained:
